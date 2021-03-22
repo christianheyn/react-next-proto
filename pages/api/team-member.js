@@ -22,7 +22,7 @@ export default async (req, res) => {
 
 
         default:
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 2000));
             res.status(200).json({ teamMembers: initialTeamMembers })
     }
 

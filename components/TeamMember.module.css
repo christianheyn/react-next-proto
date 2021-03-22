@@ -1,0 +1,42 @@
+.TeamMember {
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+    height: 3rem;
+    border-radius: 0.4rem;
+    max-width: 20rem;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: come-in 300ms ease-in-out;
+}
+
+.TeamMemberLoading {
+    animation: load 600ms ease-in-out infinite;
+    box-shadow: none;
+}
+
+@keyframes load {
+    0% {
+        background-color: rgb(162, 218, 255);
+    }
+
+    50% {
+        background-color: rgb(205, 235, 255);
+    }
+    100% {
+        background-color: rgb(162, 218, 255);
+    }
+}
+
+
+@keyframes come-in {
+    0% {
+        transform: translateX(-6px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
